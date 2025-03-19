@@ -1,0 +1,191 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: "Poppins";
+   font-size: 15px;
+   font-weight: 600;
+   background-color: hsl(0, 0%, 97%);
+   color: hsla(0, 0%, 0%, 0.719);
+}
+
+:root{
+   --Red: hsl(0, 78%, 62%);
+   --Cyan: hsl(180, 62%, 55%);
+   --Orange: hsl(34, 97%, 64%);
+   --Blue: hsl(212, 86%, 64%);
+
+}
+
+
+/********************************************************************************************/
+.flex{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+main.flex{
+   flex-direction: row;
+}
+main{
+   position: relative;
+}
+
+/********************************************************************************************/
+
+.sec-header{
+   text-align: center;
+}
+.sec-header .sec-title{
+   font-weight: 200;
+}
+.sec-header .sec-berif{
+   font-size: calc(1.15rem + 1.5vw);
+   font-weight: 600;
+}
+.sec-header .sec-p{
+   width: 100%;
+   margin: auto;
+}
+
+.sec-p,.feat-desc{
+   color: hsla(0, 0%, 0%, 0.329);
+}
+
+.feature-card{
+   background-color: white;
+   border-radius: .5rem;
+   padding: 1.5rem;
+   width: 300px;
+   box-shadow: 0 5px 15px 0 lightgray;
+   transition: .5s;
+}
+.feature-card .feat-title{
+   font-weight: 600;
+}
+.feature-card img{
+   margin: 1rem 0;
+   float: right;
+}
+
+.feature-card:hover{
+   translate: 0 -5px;
+   box-shadow: 0 5px 20px 0 lightgray;
+}
+
+.feat-one{
+   border-top: 5px solid var(--Cyan);
+}
+.feat-two{
+   border-top: 5px solid var(--Red);
+}
+.feat-three{
+   border-top: 5px solid var(--Orange);
+}
+.feat-four{
+   border-top: 5px solid var(--Blue);
+}
+
+
+/********************************************************************************************/
+
+@media screen and (max-width: 479px) {
+
+   main.flex{
+      flex-direction: column;
+      width: 100%;
+   }
+   .feature-card{
+      width: 100%;
+   }
+   .sec-header .sec-p{
+      width: 100%;
+      margin: auto;
+   }
+
+}
+
+@media screen and (min-width: 480px) {
+
+
+   main.flex{
+      flex-direction: column;
+   }
+   .feature-card{
+      width: 460px;
+   }
+   .sec-header .sec-p{
+      width: 70%;
+      margin: auto;
+   }
+   
+}
+
+@media screen and (min-width: 768px) {
+
+
+   main.flex{
+      flex-direction: column;
+   }
+   .feature-card{
+      width: 500px;
+   }
+   .sec-header .sec-p{
+      width: 45%;
+      margin: auto;
+   }
+   
+}
+
+@media screen and (min-width: 1025px) {
+
+   main.flex{
+      flex-direction: row;
+   }
+   .feature-card{
+      width: 280px;
+   }
+   
+}
+
+@media screen and (min-width: 1200px) {
+   
+   main.flex{
+      flex-direction: row;
+   }
+   .feature-card{
+      width: 320px;
+   }
+
+}
+
+@media screen and (min-width: 1441px) {
+   main.flex{
+      flex-direction: row;
+   }
+   .feature-card{
+      width: 400px;
+   }
+}
+
+
+
+footer .attribution{
+   padding: .2rem;
+   border-radius: 1rem;
+   background-color: white;
+   box-shadow: 0 0 10px 0 gray;
+   border: 5px solid;
+   border-color: transparent transparent transparent transparent;
+   width: fit-content;
+   margin: auto;
+   translate: 0 -7px;
+   transition: .5s;
+}
+footer .attribution:hover{
+   box-shadow: -5px 5px 0 0 var(--Blue), 5px 5px 0 0 var(--Orange), 5px -5px 0 0 var(--Cyan), -5px -5px 0 0 var(--Red);
+}
