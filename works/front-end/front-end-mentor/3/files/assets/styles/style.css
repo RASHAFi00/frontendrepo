@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root{
+  --card-width-xlarge: 600px;
+  --card-width-wide: 460px;
+  --card-width-med: 330px;
+  --card-width-small: 290px;
+  --caard-width-zero: 0px;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body{
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* translate: -50% -50%; */
+  width: var(--card-width-zero);
+  background-color: hsl(0, 0%, 12%);
+  padding: 2rem;
+  border-radius: .75rem;
+  margin: 1rem 0;
+}
+
+#user{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#info{
+  margin-bottom: 1.5rem;
+}
+#name{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+#address, #job{
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#address{
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+#job{
+  color: rgba(211, 211, 211, 0.76);
+  font-size: 14px;
+  font-weight: 600;
+}
+#links-list{
+  list-style: none;
+}
+#links-list li{
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: .75rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 20%);
+  transition: .5s;
+  cursor: pointer;
+  font-weight: 700;
+}
+#links-list li a{
+  text-decoration: none;
+  color: lightgray;
+  transition: .5s;
+}
+#links-list li:hover{
+  background-color: hsl(75, 94%, 57%);
+}
+#links-list li:hover a{
+  color: hsl(0, 0%, 12%);
+}
+
+#image{
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#image img{
+  clip-path: circle();
+}
+
+.attribution{
+  /* position: absolute; */
+  /* left: 50%; */
+  /* translate: -50%; */
+  bottom: 10px;
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 20%);
+  font-weight: bold;
+  padding: .5rem;
+  box-shadow: 0 0 0 0 hsl(75, 94%, 57%);
+  transition: .5s;
+  margin: 1rem 0;
+}
+.attribution:hover{
+  background-color: hsl(75, 94%, 57%);
+  box-shadow: 0 0 10px 0 hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+
+
+
+
+@media (min-width: 375px){
+
+  main{
+    width: var(--card-width-small);
+    padding: 1rem;
+  }
+}
+@media (min-width: 480px) {
+
+  main{
+    width: var(--card-width-med);
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+
+  main {
+    width: var(--card-width-wide);
+    padding: 2rem;
+  }
+}
