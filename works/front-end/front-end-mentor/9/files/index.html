@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="stylesheet" href="assets/styles/thumb.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+
+
+  <!-- Sign-up form start -->
+  <main class="newsletter-main">
+
+    <div class="newsletter">
+      <h1> Stay updated! </h1>
+
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li> <img src="assets/images/icon-list.svg" alt=""> Product discovery and building what matters</li>
+        <li> <img src="assets/images/icon-list.svg" alt=""> Measuring to ensure updates are a success</li>
+        <li> <img src="assets/images/icon-list.svg" alt=""> And much more!</li>
+      </ul>
+
+      <form action="news-register">
+
+        <span class="email-validation-message">Valid E-Mail Required</span>
+        <label for="emailfield">Email Address</label>
+        <input type="email" name="" id="emailfield" placeholder="email@company.com" class="">
+        <button id="submitform" class="btn-main"> <span class="overlay"></span> <span class="btn-text">Subscribe to
+            monthly newsletter</span> </button>
+
+      </form>
+
+    </div>
+
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="news-img-desktop">
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="news-img-mobile">
+
+  </main>
+  <!-- Sign-up form end -->
+
+
+
+  <!-- Success message start -->
+  <main class="success-message">
+
+    <section>
+      <img src="assets/images/icon-success.svg" alt="">
+
+      <h1>Thanks for subscribing!</h1>
+
+      <p>
+        A confirmation email has been sent to <span id="user-email-display"></span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </section>
+
+    <button id="dismiss" class="btn-main"> <span class="overlay"></span> <span class="btn-text">Dismiss message</span>
+    </button>
+
+  </main>
+  <!-- Success message end -->
+
+
+
+  <div class="attribution">
+    <img src="assets/images/favicon-32x32.png" alt="">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/RASHAFi00">RASHAFi</a>.
+  </div>
+
+  <section class="controllmenu">
+    <span class="vbar"></span>
+    <div class="tomainpage">
+      <p>
+        More Solutions Found in the <br> <a class="homepage" href="https://rashafi00.github.io/frontendrepo/">Main Page</a>
+      </p>
+    </div>
+  </section>
+
+
+  <script src="assets/js/submit.js"></script>
+  <script src="assets/js/success.js"></script>
+</body>
+
+</html>
