@@ -1,0 +1,193 @@
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-600 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.outfit-700 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "outfit", sans-serif;
+}
+/* body{
+  
+} */
+
+/* /////////////////////////////////////////////////////////////// */
+body{
+  position: relative;
+}
+main{
+  background-color: white;
+}
+.brown{
+  color: hsl(14, 45%, 36%);
+}
+.unstyled{
+  list-style: none;
+  padding: 0;
+}
+
+ul, ol{
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+ul li::marker, ol li::marker{
+  color: hsl(14, 45%, 36%);
+}
+ol li::marker{
+  font-weight: bold;
+}
+ul li, ol li{
+  margin: .5rem 0;
+  line-height: 22px;
+}
+.container{
+  padding: 0 1.5rem;
+}
+span.bar{
+  width: 100%;
+  height: 2px;
+  background-color: hsl(30, 54%, 90%);
+  display: block;
+}
+section{
+  margin: 1rem 0 2rem 0;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.heading{
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+h1{
+  font-weight: 700;
+}
+
+li, p{
+  font-weight: 400;
+  color: hsla(27, 5%, 37%, 0.849);
+}
+p{
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+strong{
+  color: hsl(30, 10%, 34%);
+}
+.flex-vertical{
+  display: flex;
+  flex-direction: column;
+}
+/* //////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 768px) {
+
+main{
+  padding: 1.5rem;
+  margin: 2rem auto;
+  width: 660px;
+  border-radius: 2.5rem;
+}
+img{
+  border-radius: 1rem;
+}
+body{
+  background-color: #f1e2d3;
+}
+  
+}
+@media screen and (min-width: 992px) {
+
+  main{
+    padding: 2rem 2rem 1rem;
+    margin: 3rem auto;
+    width: 700px;
+    border-radius: 3rem;
+  }
+  .container{
+    padding: 0;
+  }
+  img{
+    border-radius: 1rem;
+  }
+  
+}
+
+/* //////////////////////////////////////////////////////////////// */
+#amount ul li, #nutrient ul li{
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+  padding-left: 1rem;
+}
+#nutritions{
+  margin-bottom: 0;
+}
+#nutrient-table{
+  display: flex;
+}
+#nutrient ul li{
+  color: hsl(30, 2%, 48%);
+}
+#nutrient-table article{
+  width: 50%;
+}
+#preparation-time{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(330, 100%, 98%);
+  color: hsl(332, 51%, 32%);
+  transition: .5s;
+}
+#preparation-time:hover{
+  background-color: hsl(330, 100%, 96%);
+}
+#preparation-time h3{
+  font-weight: bold;
+}
+#preparation-time ul li::marker{
+  color: hsl(332, 51%, 32%);
+}
+
+
+
+
+
+
+
+.attribution{
+  padding: .5rem .75rem;
+  border-radius: 1rem;
+  background-color: #f1e2d3;
+  box-shadow: 0 0 20px 0 white , 0 0 20px 0 white , 0 0 20px 0 white;
+  width: fit-content;
+  margin: 2rem auto;
+  transition: .8s;
+}
+.attribution:hover{
+  background-color: white;
+  box-shadow:  0 0 20px 0 #f1e2d3 , 0 0 20px 0 #f1e2d3 , 0 0 20px 0 #f1e2d3;
+}
