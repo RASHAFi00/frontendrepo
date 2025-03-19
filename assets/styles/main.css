@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #313131;
+    --theme-inverted-color: white;
+    --theme-current-color: rgb(37, 37, 37);
+    --selection-color: #FF9B3D;
+    --selection-color-secondary: #16dfbd;
+}
+
+body {
+    font-family: "Oswald";
+
+    min-height: 100vh;
+
+    background-color: var(--body-bg);
+    position: relative;
+
+    font-size: clamp(.4rem, 3.5vw, 1rem);
+
+    align-content: center;
+    transition: .5s;
+}
+
+body main {
+    width: 80vw;
+    max-width: 68rem;
+    height: 80vh;
+    margin: auto;
+    padding: 1rem;
+    background-color: transparent;
+
+    background-image: linear-gradient(-45deg, rgba(128, 128, 128, 0.247), transparent);
+
+    border: 3px solid #d0d0d07e;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+body main nav {
+    width: 6rem;
+    height: 100%;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #a9a9a97a;
+    border-radius: 1rem;
+    position: relative;
+}
+
+body main nav .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body main nav .nav-links-container .nav-item {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body main nav .nav-links-container .nav-item:hover {
+    cursor: pointer;
+
+}
+
+body main nav .nav-links-container .nav-item:hover span.selection {
+    background-color: var(--selection-color-secondary);
+}
+
+body main nav .nav-links-container .nav-item span.selection {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% .7rem;
+    width: 3rem;
+    height: 1rem;
+    z-index: -1;
+    padding: .8rem 1.5rem;
+    border-radius: 1.5rem;
+    transition: .5s;
+}
+
+body main nav .nav-links-container .nav-item.active span.selection {
+    background-color: var(--selection-color);
+}
+
+
+
+body main nav #light-switch {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--theme-inverted-color);
+    padding: .5rem;
+    border-radius: 1.5rem;
+    transition: .5s;
+    color: var(--theme-current-color);
+}
+
+body main nav #light-switch span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 1rem;
+
+    transition: .5s;
+
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+body main nav #light-switch span:hover {
+    background-color: var(--selection-color-secondary);
+}
+
+body main nav #light-switch span.selected {
+    background-color: var(--selection-color);
+    /* color: black; */
+
+    transition: .5s;
+
+}
+
+
+
+
+
+body main .content {
+    flex: 1;
+
+    padding: 2rem;
+    position: relative;
+}
+
+body main .content #home,
+body main .content #works,
+body main .content #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    padding: 2rem;
+    transition: .5s;
+    height: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+body main .content div.visible-layer {
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+body main .content #home {
+    /*  */
+    /* display: none; */
+    /*  */
+    color: var(--theme-inverted-color);
+}
+
+body main .content #home h1 {
+    font-family: 'Berkshire Swash', cursive;
+    /* font-size: 4rem; */
+    font-size: clamp(2.2rem, 10vw, 4rem);
+}
+
+body main .content #home p {
+    margin-left: 2rem;
+    /* font-size: 1.3rem; */
+    font-size: clamp(.5rem, 8vw, 1.3rem);
+    opacity: .8;
+}
+
+body main .content #home p a {
+    color: #1693E0;
+}
+
+body main .content #works {
+
+    /*  */
+    /* display: none; */
+    /*  */
+
+
+    width: 100%;
+
+}
+
+body main .content #works h2.cat-heading {
+    background-color: var(--theme-inverted-color);
+    color: var(--theme-current-color);
+    padding: 1.2rem;
+    border-radius: 3rem;
+    width: fit-content;
+    transition: .5s;
+    text-align: center;
+
+}
+
+body main .content #works .works-display-1 {
+    width: 100%;
+    max-height: 25rem;
+
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border: 3px solid #d0d0d07e;
+    background-color: #d0d0d034;
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 3.5rem;
+    justify-content: center;
+
+    overflow-y: auto;
+}
+
+body main .content #contact {
+
+    width: 100%;
+
+}
+
+body main .content #contact .contact-heading {
+    width: fit-content;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    background-color: var(--theme-inverted-color);
+    color: var(--theme-current-color);
+    transition: .5s;
+    text-align: center;
+
+}
+
+body main .content #contact .contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+body main .content #contact .contact-me .contact-link {
+
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    border: 3px solid #d0d0d07e;
+    background-color: #d0d0d034;
+    border-radius: 1rem;
+    height: 6rem;
+    padding: 0 3rem;
+
+    transition: .5s;
+
+    text-decoration: none;
+    color: var(--theme-current-color);
+}
+
+body main .content #contact .contact-me .contact-link img {
+    width: 4rem;
+    background-color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.452);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+body main .content #contact .contact-me .contact-link p {
+    /* font-size: 1.3rem; */
+    font-size: clamp(.6rem, 4vw, 1.3rem);
+    font-weight: 600;
+    color: var(--theme-inverted-color);
+    transition: .5s;
+}
+
+body main .content #contact .contact-me .contact-link:hover {
+    translate: 0 -.25rem;
+}

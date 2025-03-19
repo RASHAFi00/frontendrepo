@@ -1,0 +1,79 @@
+.work-piece {
+    background-color: white;
+    width: 13rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 3px solid #d0d0d07e;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+.img-disp {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.hide-overlay {
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.img-disp img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.work-piece-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-piece p {
+    font-size: .9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-piece .tags {
+    position: absolute;
+    top: .7rem;
+    right: .7rem;
+    z-index: 3;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .2rem;
+}
+
+.work-piece .tags span {
+    font-size: .6rem;
+    padding: .2rem;
+    border-radius: 1rem;
+    display: block;
+    min-width: 1.8rem;
+    text-align: center;
+    font-family: "Source Code Pro", "Consolas", "Courier New", monospace;
+}
+
+.html {
+    background-color: #E13E4C;
+}
+
+.css {
+    background-color: #1693E0;
+
+}
+
+.js {
+    background-color: #FF9B3D;
+}

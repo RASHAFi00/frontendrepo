@@ -1,0 +1,73 @@
+@media screen and (max-width: 992px) {
+
+    body {
+        align-content: unset;
+    }
+
+    body main {
+        width: unset;
+        max-width: unset;
+        height: 100vh;
+        border-radius: unset;
+        border: unset;
+
+    }
+
+    body main .content {
+        padding: 3rem;
+    }
+
+    body main .content #works .works-display-1 {
+        column-gap: 2rem;
+        max-height: 32rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .bg-obj .objlines {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+
+    body main {
+        gap: unset;
+    }
+
+    body main nav {
+        width: 4rem;
+    }
+
+    body main .content #home,
+    body main .content #home,
+    body main .content #home {
+        padding: 1rem;
+    }
+
+    body main .content #home p {
+        margin-left: 1rem;
+    }
+
+    .work-piece {
+        width: 8rem;
+    }
+
+    body main .content #contact .contact-me .contact-link {
+        gap: 1rem;
+        padding: 0 1rem;
+        height: 4rem;
+
+    }
+
+    body main .content #contact .contact-me .contact-link img {
+        width: 2.1rem;
+    }
+
+
+}
