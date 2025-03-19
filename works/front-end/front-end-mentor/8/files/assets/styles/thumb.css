@@ -1,0 +1,58 @@
+
+:root{
+    --thumbnail-color: #009688;
+    --inner-mp-color: #ffffff;
+    --bg-mp-color: #009688;
+    --thumb-bg: #f3f3f3;
+}
+body .controllmenu{
+    width: 17rem;
+    height: 8rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: -16rem -50%;
+    overflow: hidden;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 gray;
+    background-color: var(--thumb-bg);
+    transition: 1s;
+}
+body .controllmenu:hover{
+    translate: 0 -50%;
+}
+body .controllmenu:hover span.vbar{
+    width: .5rem;
+    background-color: #2196f3;
+}
+body .controllmenu span.vbar{
+    height: 8rem;
+    width: 2.05rem;
+    background-color: var(--thumbnail-color);
+    transition: 1s;
+}
+body .controllmenu .tomainpage{
+    width: 15.5rem;
+}
+body .controllmenu .tomainpage p{
+    text-align: center;
+    font-weight: bold;
+    line-height: 2rem;
+}
+body .controllmenu .tomainpage p a.homepage{
+    text-decoration: none;
+    color: var(--inner-mp-color);
+    background-color: var(--bg-mp-color);
+    padding: .5rem 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 gray;
+    transition: .5s;
+}
+body .controllmenu .tomainpage p a.homepage:hover{
+    color: var(--bg-mp-color);
+    background-color: var(--inner-mp-color);
+}
