@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Work",
+    "ID": "work",
+    "timeframes": {
+      "daily": {
+        "current": 5,
+        "previous": 7,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 32,
+        "previous": 36,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 103,
+        "previous": 128,
+        "tfID": "Last Month"
+      }
+    }
+  },
+  {
+    "title": "Play",
+    "ID": "play",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 2,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 10,
+        "previous": 8,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 23,
+        "previous": 29,
+        "tfID": "Last Month"
+      }
+    }
+  },
+  {
+    "title": "Study",
+    "ID": "study",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 4,
+        "previous": 7,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 13,
+        "previous": 19,
+        "tfID": "Last Month"
+      }
+    }
+  },
+  {
+    "title": "Exercise",
+    "ID": "exercise",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 1,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 4,
+        "previous": 5,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 11,
+        "previous": 18,
+        "tfID": "Last Month"
+      }
+    }
+  },
+  {
+    "title": "Social",
+    "ID": "social",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 3,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 5,
+        "previous": 10,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 21,
+        "previous": 23,
+        "tfID": "Last Month"
+      }
+    }
+  },
+  {
+    "title": "Self Care",
+    "ID": "self-care",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1,
+        "tfID": "Last Day"
+      },
+      "weekly": {
+        "current": 2,
+        "previous": 2,
+        "tfID": "Last Week"
+      },
+      "monthly": {
+        "current": 7,
+        "previous": 11,
+        "tfID": "Last Month"
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+@media (max-width: 1200px) {
+    body main section.activity {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 976px) {
+    body main section.activity {
+        max-width: 17rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        height: auto;
+        padding: 3rem 0;
+    }
+    body main {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem 2rem;
+        width: auto;
+    }
+
+    body main section.profile,
+    body main section.activity {
+        width: unset;
+    }
+
+    body main section.profile .profile-info {
+        padding: 2rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    body main section.profile .profile-info .report-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body main section.profile .toggle-buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    body main section.activity .timeframe-card {
+        height: auto;
+        width: 100%;
+        padding-top: 2.5rem;
+    }
+
+    body main section.activity .timeframe-card .content {
+        height: auto;
+    }
+
+    body main section.activity .timeframe-card .content-title {
+        margin-bottom: .3rem;
+    }
+
+    body main section.activity {
+        overflow: unset;
+        max-width: unset;
+        height: unset;
+    }
+
+}

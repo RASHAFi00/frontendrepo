@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Berkshire+Swash&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-light: hsl(246, 80%, 60%);
+
+    --Orange: hsl(15, 100%, 70%);
+    --Blue: hsl(195, 74%, 62%);
+    --Pink: hsl(348, 100%, 68%);
+    --Green: hsl(145, 58%, 55%);
+    --Purple: hsl(264, 64%, 52%);
+    --Yellow: hsl(43, 84%, 65%);
+
+    --main-bg: hsl(236, 44%, 20%);
+    --hover-bg: hsl(236, 41%, 34%);
+    --button-text: hsl(239, 32%, 61%);
+    --text: hsl(239, 27%, 66%);
+}
+
+.active-btn {
+    color: white !important;
+}
+
+body {
+    font-family: "Rubik";
+    font-size: clamp(.8rem, 4vw, 1rem);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: hsl(224, 46%, 9%);
+}
+
+body main,
+body main section,
+body main div {
+    border-radius: 1rem;
+}
+
+body main {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    width: fit-content;
+}
+
+body main section.profile {
+    width: 16rem;
+
+    background-color: var(--main-bg);
+}
+
+body main section.profile span {
+    display: block;
+    opacity: .7;
+    font-weight: 400;
+}
+
+body main section.profile p {
+    font-size: clamp(2.3rem, 5vw, 3rem);
+    font-weight: 300;
+}
+
+body main section.profile img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 20rem;
+    border: 3px solid white;
+}
+
+body main section.profile .profile-info {
+    background-color: var(--Purple-light);
+    padding: 2rem 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+body main section.profile .profile-info .report-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+}
+
+body main section.profile .toggle-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 2rem;
+
+}
+
+body main section.profile .toggle-buttons button {
+    background-color: unset;
+    border: unset;
+    color: var(--button-text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+}
+
+body main section.profile .toggle-buttons button:hover {
+    color: white;
+}
+
+
+body main section.activity {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 52.5rem;
+    width: fit-content;
+    height: 34rem;
+    gap: 2rem;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+.attribution{
+    background-color: var(--main-bg);
+    padding: .8rem;
+    border-radius: 5rem;
+    transition: .5s;
+    cursor: default;
+    box-shadow: 0 0 1.5rem 0 black;
+}
+.attribution:hover{
+    background-color: var(--hover-bg);
+}
+.attribution a{
+    color: var(--Blue);
+}
+
+
+
+::-webkit-scrollbar {
+    width: .5rem;
+    height: 2rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--hover-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Purple-light);
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--Purple);
+}

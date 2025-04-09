@@ -1,0 +1,172 @@
+.timeframe-card {
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeframe-card #activity-icon {
+    position: absolute;
+    top: -0.6rem;
+    right: 1rem;
+}
+
+.timeframe-card .content {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 13.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.7rem;
+
+    transition: .5s;
+    position: relative;
+}
+
+.timeframe-card .content:hover {
+    background-color: var(--hover-bg);
+}
+
+.timeframe-card .content .content-title {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.timeframe-card .content .content-title #title {
+    font-weight: 500;
+}
+
+.timeframe-card .content .content-title span {
+    display: block;
+}
+
+.timeframe-card .content .content-title span.more {
+    margin-right: 1rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: white;
+    opacity: .5;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.timeframe-card .content .content-title span.more::before,
+.timeframe-card .content .content-title span.more::after {
+    content: "";
+    display: block;
+    width: .4rem;
+    height: 0.4rem;
+    border-radius: 10rem;
+    background-color: white;
+    opacity: .5;
+    transition: .5s;
+}
+
+.timeframe-card .content .content-title span.more::before {
+    transform: translate(.6rem, 0);
+}
+
+.timeframe-card .content .content-title span.more::after {
+    transform: translate(-.6rem, -.4rem);
+}
+
+.timeframe-card .content .content-title span.more:hover,
+.timeframe-card .content .content-title span.more:hover ::before,
+.timeframe-card .content .content-title span.more:hover ::after {
+    opacity: 1;
+}
+
+
+.timeframe-card .content .content-timeframe {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.timeframe-card .content .content-timeframe p#current {
+    font-size: 3.7rem;
+    transition: .5s;
+    opacity: 1;
+    font-weight: 300;
+}
+
+.timeframe-card .content .content-timeframe p#previous {
+    color: var(--text);
+    transition: .5s;
+    opacity: 1;
+    font-weight: 500;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+.work {
+    /* background-color: var(--Orange); */
+    background-image: linear-gradient(to bottom, var(--Orange) 20%, transparent 100%);
+}
+
+.play {
+    background-image: linear-gradient(to bottom, var(--Blue) 20%, transparent 100%);
+}
+
+.study {
+    background-image: linear-gradient(to bottom, var(--Pink) 20%, transparent 100%);
+}
+
+.exercise {
+    background-image: linear-gradient(to bottom, var(--Green) 20%, transparent 100%);
+}
+
+.social {
+    background-image: linear-gradient(to bottom, var(--Purple) 20%, transparent 100%);
+}
+
+.self-care {
+    background-image: linear-gradient(to bottom, var(--Yellow) 20%, transparent 100%);
+}
