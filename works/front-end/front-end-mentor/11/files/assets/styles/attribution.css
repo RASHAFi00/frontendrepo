@@ -1,0 +1,30 @@
+
+
+
+.attribution {
+   font-size: 14px;
+   text-align: center;
+
+   padding: .8rem;
+   border-radius: 5rem;
+   background-color: white;
+   width: fit-content;
+   margin: auto;
+
+   transition: .5s;
+
+}
+
+.attribution:hover{
+   background-color: var(--Green-900);
+   color: white;
+}
+.attribution:hover a{
+   color: var(--hover);
+}
+
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   transition: .5s;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assets/media/icons/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/attribution.css">
+  <link rel="stylesheet" href="assets/styles/mediaq.css">
+  <link rel="stylesheet" href="assets/styles/thumb.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+
+<body>
+
+  <div class="logo" style="width: fit-content">
+    <img src="assets/media/icons/logo.svg" alt="">
+  </div>
+
+  <main>
+
+    <section class="configure">
+
+      <div class="bill-input">
+
+        <div class="labels">
+          <label for="billamount">Bill</label>
+          <span class="error hidden" id="billNAN">Not A Number !</span>
+          <span class="error hidden" id="billZERO">Can't Be Zero !</span>
+        </div>
+
+        <div class="input-box input-blur" id="for-billamount">
+          <img src="assets/media/icons/icon-dollar.svg" alt="">
+          <input type="text" name="bill" id="billamount">
+        </div>
+
+      </div>
+
+      <!--  -->
+
+      <div class="billconfig">
+        <div class="labels">
+          <label for="custontip">Select Tip %</label>
+        </div>
+
+        <div class="input-grid">
+          <div class="fixed-input input-button" id="5"> <button class="fixed-val">5%</button> </div>
+          <div class="fixed-input input-button" id="10"> <button class="fixed-val">10%</button> </div>
+          <div class="fixed-input input-button" id="15"> <button class="fixed-val">15%</button> </div>
+          <div class="fixed-input input-button" id="25"> <button class="fixed-val">25%</button> </div>
+          <div class="fixed-input input-button" id="50"> <button class="fixed-val">50%</button> </div>
+          <div class="input-box input-button custom-input input-blur" id="for-customtip">
+            <input type="text" name="custom-tip" id="customtip" placeholder="Custom">
+          </div>
+        </div>
+
+      </div>
+
+      <!--  -->
+
+      <div class="person-count-input">
+
+        <div class="labels">
+          <label for="personcount">Number Of People</label>
+          <span class="error hidden" id="personNAN">Not A Number !</span>
+          <span class="error hidden" id="personZERO">Can't Be Zero !</span>
+        </div>
+
+        <div class="input-box input-blur" id="for-personcount">
+          <img src="assets/media/icons/icon-person.svg" alt="">
+          <input type="text" name="person" id="personcount">
+        </div>
+
+      </div>
+
+    </section>
+    <!--  -->
+
+
+    <section class="calculator">
+
+      <div class="output">
+
+        <div class="out">
+          <div class="output-title">
+            <p>Tip Ammount</p>
+            <span>/ Person</span>
+          </div>
+
+          <p class="output-value" id="perperson">$0.00</p>
+        </div>
+        <!--  -->
+
+        <div class="out">
+          <div class="output-title">
+            <p>Total</p>
+            <span>/ Person</span>
+          </div>
+
+          <p class="output-value" id="total">$0.00</p>
+        </div>
+
+      </div>
+      <!--  -->
+
+      <button class="reset" id="reset">RESET</button>
+
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/RASHAFi00">Rashafi</a>.
+  </div>
+
+
+
+  <section class="controllmenu">
+    <span class="vbar"></span>
+    <div class="tomainpage">
+      <p>
+        More Solutions Found in the <br> <a class="homepage" href="https://rashafi00.github.io/frontendrepo/">Main Page</a>
+      </p>
+    </div>
+  </section>
+
+
+
+  <script src="assets/javascript/res.js"></script>
+  <script src="assets/javascript/main.js"></script>
+
+</body>
+
+</html>

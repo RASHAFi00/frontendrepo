@@ -1,0 +1,54 @@
+
+
+
+
+
+@media (max-width: 1024px){
+    body{
+        gap: 1.8rem;
+    }
+    body main section{
+        width: 22rem;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        display: block;
+    }
+
+    body .logo{
+        margin: 4rem auto;
+
+    }
+
+    body main{
+        flex-direction: column;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 2rem 1.5rem;
+    }
+
+    body main section{
+        width: 100%;
+    }
+
+    body main section.configure{
+        padding: unset;
+    }
+    body main section.configure .billconfig .input-grid .input-button{
+        width: calc(50% - .5rem);
+    }
+
+    body main section.calculator{
+        padding: 3rem 2rem 2rem;
+        gap: 2.8rem;
+    }
+
+    .attribution{
+        width: auto;
+        border-radius: 0;
+    }
+}

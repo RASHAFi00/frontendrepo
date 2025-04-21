@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary: hsl(172, 67%, 45%);
+   --bg: hsl(185, 41%, 84%);
+
+
+
+   --Green-900: hsl(183, 100%, 15%);
+   --Grey-500: hsl(186, 14%, 43%);
+   --Grey-400: hsl(184, 14%, 56%);
+   --Grey-200: hsl(185, 41%, 84%);
+   --Grey-50: hsl(202, 50%, 97%);
+   --White: hsl(0, 100%, 100%);
+   --hover: hsl(173, 61%, 77%);
+   --active: hsl(172, 66%, 46%);
+}
+
+/* _______________________________________________________________________________________________________-- */
+.input-focus {
+   border: 2px solid var(--primary);
+}
+.input-blur{
+   border: 2px solid transparent;
+}
+
+.error {
+   border-color: hsl(15, 100%, 74%);
+}
+
+.hidden {
+   display: none;
+}
+
+/* _______________________________________________________________________________________________________-- */
+body {
+   font-family: "Space Mono";
+   font-weight: 700;
+   font-size: clamp(1rem , 4vw , 1.1rem);
+
+   min-height: 100vh;
+   display: grid;
+   place-content: center;
+   gap: 3rem;
+
+   background-color: var(--bg);
+}
+body input{
+   font-weight: 700;
+   color: var(--Green-900);
+   opacity: .8;
+   caret-color: var(--primary);
+}
+
+body .logo{
+   margin: auto;
+}
+
+body main {
+   background-color: white;
+   border-radius: 1.5rem;
+   padding: 2rem;
+
+   display: flex;
+   gap: 2rem;
+}
+
+body main section {
+   width: 25rem;
+
+
+}
+
+
+body main section.configure {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 1rem;
+}
+
+body main section.configure .labels {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .5rem;
+   opacity: .5;
+}
+
+body main section.configure .labels .error {
+   color: hsl(15, 100%, 50%);
+}
+
+body main section.configure .input-box {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   padding: 0rem 1.2rem;
+   background-color: var(--Grey-50);
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: .5s;
+}
+
+body main section.configure .input-box input {
+   background-color: transparent;
+   width: 100%;
+   border: unset;
+   outline: unset;
+   direction: rtl;
+   font-family: "Space Mono";
+   color: var(--Green-900);
+   font-size: 1.5rem;
+   padding: .4rem 0;
+   cursor: pointer;
+}
+
+body main section.configure .billconfig .input-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+}
+
+body main section.configure .billconfig .input-grid .input-button {
+   display: grid;
+   width: calc(33.3333% - 0.6666rem);
+
+
+
+
+   /* width: 100%; */
+   height: 3.2rem;
+
+   transition: .5s;
+   cursor: pointer;
+   border-radius: .5rem;
+
+}
+
+body main section.configure .billconfig .input-grid .input-button.custom-input {
+   background-color: var(--Grey-50);
+   padding: 0;
+}
+body main section.configure .billconfig .input-grid .input-button.custom-input::placeholder{
+   color: var(--Green-900);
+}
+
+body main section.configure .billconfig .input-grid .input-button.custom-input input {
+   padding: 0 .5rem;
+}
+
+body main section.configure .billconfig .input-grid .input-button button {
+   border: unset;
+   background-color: var(--Green-900);
+   color: white;
+   border-radius: .3rem;
+   font-size: 1.5rem;
+   transition: .5s;
+   cursor: pointer;
+   font-family: "Space Mono";
+   font-weight: 700;
+
+}
+
+body main section.configure .billconfig .input-grid .input-button button:hover {
+   background-color: var(--hover);
+   color: var(--Green-900);
+}
+
+body main section.configure .billconfig .input-grid .input-button button.active {
+   background-color: var(--active);
+   color: var(--Green-900);
+}
+
+body main section.configure .billconfig .input-grid .custom-input input {
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body main section.calculator {
+   background-color: var(--Green-900);
+   border-radius: 1rem;
+   padding: 3rem 2rem 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+}
+
+body main section.calculator .output {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   color: white;
+}
+
+body main section.calculator .output .out {
+   display: flex;
+   justify-content: space-between;
+}
+
+body main section.calculator .output .out p{
+   font-size: 1.1rem;
+}
+
+body main section.calculator .output .out span{
+   font-size: .9rem;
+   opacity: .5;
+}
+
+body main section.calculator .output .out .output-value{
+   font-size: clamp(2.4rem , 6vw , 2.8rem);
+   color: var(--active);
+}
+
+body main section.calculator button.reset {
+   border: unset;
+   background-color: var(--active);
+   color: var(--Green-900);
+   transition: .5s;
+   cursor: pointer;
+   padding: 1.2rem 0;
+   font-size: 1.2rem;
+   border-radius: .5rem;
+   font-weight: 700;
+}
+
+body main section.calculator button.reset:hover {
+   background-color: var(--hover);
+}
+
+/* 
+--Green-900: hsl(183, 100%, 15%);
+--Grey-500: hsl(186, 14%, 43%);
+--Grey-400: hsl(184, 14%, 56%);
+--Grey-200: hsl(185, 41%, 84%);
+--Grey-50: hsl(189, 47%, 97%);
+--White: hsl(0, 100%, 100%);
+*/
